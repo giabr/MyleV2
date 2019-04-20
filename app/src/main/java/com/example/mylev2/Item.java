@@ -1,7 +1,7 @@
 package com.example.mylev2;
 
 public class Item {
-    String namaPenjual;
+    String produk;
     String penjual;
     int harga;
     int rating;
@@ -9,17 +9,26 @@ public class Item {
     int comment;
     String tag;
     String gender;
+    private String intentDestination;
 
     public Item(){
 
     }
 
-    public String getNamaPenjual() {
-        return namaPenjual;
+    public String getIntentDestination() {
+        return "com.example.mylev2." + intentDestination;
     }
 
-    public void setNamaPenjual(String namaPenjual) {
-        this.namaPenjual = namaPenjual;
+    public void setIntentDestination(String intentDestination) {
+        this.intentDestination = intentDestination;
+    }
+
+    public String getProduk() {
+        return produk;
+    }
+
+    public void setProduk(String produk) {
+        this.produk = produk;
     }
 
     public String getPenjual() {
@@ -77,4 +86,5 @@ public class Item {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
 }
